@@ -1,0 +1,150 @@
+Chipmunk
+
+
+official:
+- Home page: http://wiki.slembcke.net/main/published/Chipmunk
+	- videos: http://files.slembcke.net/chipmunk/movies
+	- screen shots of demos: http://www.slembcke.net/photos/v/programming/chipmunk/
+	- source code: http://files.slembcke.net/chipmunk/release/ChipmunkLatest.tgz
+	- moon buggy tutorial: http://files.slembcke.net/chipmunk/tutorials/MoonBuggyTutorial.tar.gz
+- forums: http://www.slembcke.net/forums/viewforum.php?f=1
+- google code project: http://code.google.com/p/chipmunk-physics/
+
+documentation (on google code)
+- documentation: http://code.google.com/p/chipmunk-physics/wiki/Documentation
+	- bodies have shapes
+	- bodies are connected by joints
+	- bodies exist in spaces
+
+
+ports to the iphone
+- cocoas 2D 
+	- demos ported, run very slow compared to straight chipmunk
+	- there is a suggestion that they can work better if optimized
+	
+- lots of stories of ports on the chipmunk forums
+
+cocos2D
+- thinking that I want to use the cocos2D as the game engine
+	- lots of convenience methods, lots of examples
+- thinking that I want to use Box2D as the physics engine
+	- object oriented
+	- lots of documentation
+
+official:
+- code/project: http://code.google.com/p/cocos2d-iphone/
+- google group: http://groups.google.com/group/cocos2d-iphone-discuss
+- blog: http://blog.sapusmedia.com/search/label/cocos2d
+	- documentation: http://blog.sapusmedia.com/2009/03/documentation-in-cocos2d.html
+
+useful cocos2d links
+- Notes on Cocos2d iPhone Development: http://lethain.com/entry/2008/oct/03/notes-on-cocos2d-iphone-development/
+	- what things are for
+- Touch Detection in Cocos2d iPhone: http://lethain.com/entry/2008/oct/20/touch-detection-in-cocos2d-iphone/
+- cocos2d for iPhone API reference: http://www.sapusmedia.com/cocos2d-iphone-api-doc/
+- Whitepaper: Introduction to Cocos2d iPhone: http://monoclestudios.com/cocos2d_whitepaper.html
+	- getting up and running with cocos2d
+- Coloring Sprites With Cocos2d-iPhone: http://www.lukehatcher.com/2009/04/coloring-sprites-with-cocos2d-iphone/
+	- tricks with sprites
+
+
+
+Box2D
+- meant to have a lot more features
+- chipmunk may be faster
+- C++ manual: http://www.box2d.org/wiki/index.php?title=Manual/C%2B%2B#The_Testbed
+- iphone port is in SVN (works fine with 2.2.1)
+	- summary of port: http://www.handcircus.com/2009/01/15/iphone-port-of-box2d-testbed-now-available/
+	- >svn co https://box2d.svn.sourceforge.net/svnroot/box2d/trunk box2d_trunk
+- official
+	- source forge http://sourceforge.net/projects/box2d
+	- home page: http://www.box2d.org/
+	- wiki: http://www.box2d.org/wiki/index.php?title=Main_Page
+- suggested optimizations to get it to run faster
+	- http://www.box2d.org/forum/viewtopic.php?f=3&t=2096
+- good advice for engine/physics separation: http://www.box2d.org/forum/viewtopic.php?f=3&t=2897
+	- i should write the logic for managing my creatures than think about rendering them and simulating them later
+- hello world case with iphone dev: http://www.box2d.org/forum/viewtopic.php?f=7&t=1513
+
+
+help with joints
+- http://www.box2d.org/manual.html#d0e1034
+- http://blog.thestem.ca/archives/102
+- http://www.emanueleferonato.com/2009/01/19/box2d-joints-revolute-joint-building-motors/comment-page-1/
+- lots of examples: http://www.blogcatalog.com/blogs/emanuele-feronato/posts/tag/box2d/
+
+
+performance
+- http://www.box2d.org/forum/viewtopic.php?f=3&t=2064
+	- settings configured for objects between 0.1 and 10
+		- can change settings
+		- 1m is ideal: http://www.box2d.org/wiki/index.php?title=FAQ#How_do_I_convert_pixels_to_meters_units
+	- disable compile for thumb
+	- run in release mode
+	- set appropriate delta time, etc
+- speed tests: http://wiki.laptop.org/go/Physic_Engines/Speed_Tests
+- comparison: http://linuxuser.at/node/29
+
+box2d in flash
+- http://box2dflash.sourceforge.net/
+
+- a good way to update world positions from box2d positions
+	- http://geekglue.blogspot.com/2008_01_01_archive.html
+	- http://www.emanueleferonato.com/2009/02/18/a-smart-way-to-manage-sleeping-objects-with-box2d/
+
+
+tracking the iphone port
+main->UIApplicationMain
+	Info.plist->MainWindow.xib (glView->Box2DAppDelegate)
+		Box2DAppDelegate
+			- has a UIWindow (master)
+			- has a Box2dView (glView for rendering)
+			- has a TestEntriesViewController (table list of tests)
+		Box2dView (an openGL view) - renders whatever test is currently selected
+			- extends UIView
+			- has a TestSelectDelegate
+			- has a EAGLContext (for rendering the scene onto)
+			- has a TestEntry and a Test
+		TestEntriesViewController
+			- management of the list of available tests
+
+
+What I did to get up and running
+- download cocos2d: SVN check out (April 13th)
+	- download does not have decoupling from chipmunk
+- download box2d: SVN checkout (April 13th)
+	- download does not have iphone port
+	- fixed 2 bugs that prevented compilation (FALSE rather than false and missing ';')
+- new project setup for cocos2d: 
+	- http://monoclestudios.com/cocos2d_whitepaper.html
+	- only imported cocos2d directory (no chipmunk)
+	- replaced chipmunk macros with cocos2d equiv: http://code.google.com/p/cocos2d-iphone/issues/detail?id=290
+- included box2d (sources and include)
+- created a simple box2d layer for testing
+	- implemented the hello world example from box2d
+	- layout inspired by chipmunk cocos2d demos
+	- implemented basic openGL rendering, hybrid of
+		- box2d debug drawing (iphone port) [really just these things]
+		- chipmunk cocos2d demos (chipmunk port for cocos2d) [not really...]
+- fixed strange problems with header files: 
+	- Discussion of integrating Box2d into iphone project: http://www.box2d.org/forum/viewtopic.php?f=7&t=1283
+	- specifically box2d.h from my .mm header file, still went mental, needed two levels of if defs
+- fixed error when compiling for iphone hardware
+	- error: 'finite' was not declared in this scope http://www.box2d.org/forum/viewtopic.php?f=7&t=893
+- codesign failed with exit code 1
+	- object file format invalid or unsuitable
+- xCode Organizer (provisioning profiles)
+	- reports: "a signing identity matching this profile could not be found in your keychain" in yellow across the top
+	- went away after i restarted xcode
+	
+
+
+
+interested in
+- appropriate code organisation for opengl rendering in cocos2d
+	- use of cocos2d opengl functions
+- generic implementation of box2d into cocos2d (layer/ node?) where does world rendering take place?
+	
+		
+		
+		

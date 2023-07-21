@@ -1,0 +1,55 @@
+SIO2 for the iPhone: A first look
+
+Official
+- http://sio2interactive.com
+- technology: http://sio2interactive.com/TECHNOLOGY.html
+	- 17 tutorials listed
+	- 9 are video tutorials
+
+author:
+- LI CHAN, Shanghai, China
+
+engine options
+- SIO2 Engine Indie Certificate
+	- not have to have the slash screen
+	- do not have to mention SIO2
+	- one certificate per title 
+	- upgraded with each engine release
+	- technical support priority
+- SIO2 Engine 3D Game for iPhone & iPod Touch :: Free Edition
+	- have to show slpash screen
+	- very explicit EULA
+
+- versions
+	- 1.3.5 (current)
+	- EULA does not apply to previous versions of the engines
+		- <= v1.3.3
+
+- blender
+	- http://www.blender.org/
+	- 3d modeling software
+	- documentation: http://www.blender.org/download/documentation/
+
+
+- third party code
+	- Bullet Physics ( http://continuousphysics.com/Bullet/)
+	- The Independent JPEG Group's JPEG software
+	- libpng
+	- Lua (lua.org)
+	- OGG (Xiph.org Foundation)
+	- theora (Xiph.org Foundation)
+	- vorbis (Xiph.org Foundation)
+	- zlib 1.2.3 
+
+
+forum - primary means of support
+-  http://forum.sio2interactive.com
+
+
+code
+	- tutorial projects are provided (17)
+	- template project for getting started
+	- exporter
+	- docs
+	
+

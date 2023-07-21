@@ -1,0 +1,39 @@
+Technology Overview
+
+There is a lot of new tech to come to terms with when developing something for the iPhone. I'm trying to mitigate elements as I come across them.
+
+Questions?
+- What is OpenGL ES?
+- What is Objective-C?
+- What is Objective-C++?
+- What is cocoa?
+- What is cocoa touch?
+
+
+OpenGL: http://en.wikipedia.org/wiki/OpenGL
+- developed by SGI in 1992, managed by a non-profit called the Khronos Group
+- unified (cross-platform) was of drawing 3D graphics
+- operates on primitives and turns them into pixels
+- uses a FSM
+- low-level and procedural, step learning curve but lots of flexibility
+- classic references (relevant):
+	- red book (1.1 basics)
+	- orange book (2.0+ shaders)
+- vendors can introduce extensions (hardware/software)
+- versions: 1, 2, 3
+
+OpenGL ES (OpenGL for Embedded Systems): - http://en.wikipedia.org/wiki/OpenGL_ES
+- subset of OpenGL
+- for embedded devices (phones, PDA's game consoles, etc)
+- OpenGL ES 1.1 (on the iphone) ~ OpenGL 1.5
+- fixed point data types - because embedded devices typically do not have an FPU
+	- real rather than floating point: http://en.wikipedia.org/wiki/Fixed-point_arithmetic
+- 2 is more inline with OpenGL 2 and supports shaders
+
+
+Official OpenGL ES Page: http://khronos.org/opengles/
+- all the specs: http://khronos.org/opengles/1_X/
+
+
+
+

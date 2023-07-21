@@ -1,0 +1,178 @@
+Development Journal
+
+18th April 2009
+- defining simple creature brains (motor speed changes) that are simulated 
+
+17th April 2009
+- created a safe 4-wall environment for the creature
+
+16th April 2009
+- got joint to use motor in 360 degree motion
+- added joint drawing code
+- added creature mouse touch support with mouse drawing
+
+13th April 2009
+- looking into chipmunk 2d engine
+- examples are great - line drawings, simple 2d
+
+12th April 2009
+- been looking at 3D engines for the last two weeks, it is time to build things
+- i have ordered a nook on objective C, should arrive in a month
+- i am worried that my hacked setup is not viable - that is causing a lot of build errors
+- looking at building a simple 2D ecosystem for the iphone over easter or a sodarace clone, or both
+- plan
+	- warm up on objective C by doing some tutoirals (morning)
+	- design and 2D ecosystem, prototype by end of Friday
+	- tomorrow design and start building sodarace clone 
+- iPhone Dev Sessions: How To Make An Orientation-Aware Clock
+	- http://theappleblog.com/2009/04/08/iphone-dev-sessions-how-to-make-an-orientation-aware-clock/
+	- finished, worked fine
+- working on stanford assignments
+
+28th March 2009
+- continued engine selection
+
+27th March 2009
+- continued engine selection
+
+26th March 2009
+- tried phonegap, not sure if it is truly standalone or if you need to host your app online for the native client to connect to
+- started engine selection
+
+25th March 2009
+- meeting with Craig (matt didn't show)
+	- natural selection: set of challenges, set of base creatures, evolve to get best score
+	- wrote a spec and a design
+	- selecting an appropriate engine
+	- thinking about making it more interactive than just raw execution of an algorithm
+	- plan on finishing pre-build march, start build at the start of April
+- Email from Dan Angus
+	- water stage of spore was the best
+	- lots of similarities to the racer program (sodarace with a GA)
+	- provide a template but permit variation within the template
+	- guide evolution, but also let it do the hard work
+	- detect decision points (convergence) or the start of a new path (growing legs)
+- wrote a blog post summarizing a heap of recent iphone articles i've read
+
+24th March 2009
+- doing some reading
+- iPhone SDK 3.0: A New Beginning: http://electronmobile.tumblr.com/post/88814772/iphone-sdk-3-0-a-new-beginning
+	- iphone os 2.0 as the next desktop platform, apps that are more like desktop apps than mobile apps
+	- android is a long way behind
+	- constraints of the iphone, a mobile device are liberating
+		- embrace constraints: http://gettingreal.37signals.com/ch03_Embrace_Constraints.php
+	- the os is secure, no viruses like there is on blackberry and other windows phones
+	- some fanboy garbage
+- Should An iPhone App Developer Charge Or Run Ads? (Galaxy Impact Case Study): http://www.techcrunch.com/2009/03/22/should-an-iphone-app-developer-charge-or-run-ads-galaxy-impact-case-study/
+	- paid app versus a free app with advertising
+	- tanked after releasing for free then charging a dollar then free again
+	- lesson is to pick the right model at the start and stick with it
+- Pinch Media Data Shows The Average Shelf Life Of An iPhone App Is Less Than 30 Days: http://www.techcrunch.com/2009/02/19/pinch-media-data-shows-the-average-shelf-life-of-an-iphone-app-is-less-than-30-days/
+	- only 20% of users return to app after initial download
+	- after 30 days, 5% of users still use app
+	- return is about 70c per user, equiv. with free app is an $8 CPM (most are 0.50 to 2.00)
+- Coder's Half-Million-Dollar Baby Proves iPhone Gold Rush Is Still On: http://blog.wired.com/gadgets/2009/02/shoot-is-iphone.html
+	- wired article on the iShoot case
+	- >600K in a month, 37K a day as number one in app store
+- Good iPhone Practices: http://weblog.bignerdranch.com/?p=56
+	- managing buttons in UITableViewCells
+	- use a XIB file only for a complicated interface
+	- Instantiating UIViewController subclasses
+- Intro to the Objective-C Runtime: http://www.mikeash.com/?page=pyblog/friday-qa-2009-03-13-intro-to-the-objective-c-runtime.html
+	- how objective c works at the runtime level
+	- a class is a struct
+	- an object is a pointer to a struct, the first variable of which is a pointer to its class
+	- struct contains compatibility info for older operating systems
+	- built on top of C, can go rooting around to see how it works/hangs together
+- Using Multiple OpenGL Views And UIKit: http://gamesfromwithin.com/?p=318
+	- discussion on how to mix openGL views with UIKit controls/views
+	- apple: avoid doing transformations with opengl views, avoid putting transparent buttons on them
+	- stop doing frame updates when opengl view is not visible
+	- discussion of opengl view, mixed with uiview, mixed with multiple opengl views
+- Cocos2D: Open Source 2D Game Engine for iPhone Developers: http://www.mobileorchard.com/cocos2d-open-source-2d-game-engine-for-iphone-developers/
+	- engine for easy development of 2d games for the iphone
+	- open source
+	- built in physics engine (chipmunk)	
+- Tutorial: JSON Over HTTP On The iPhone: http://www.mobileorchard.com/tutorial-json-over-http-on-the-iphone/
+- iPhone - Interface Builder Tutorial: http://blog.atrexis.com/index.cfm/2008/9/29/Interface-Builder-Tutorial
+- email from David Bennett
+	- it is easy to get quick gains, but hard to get beyond that
+	- need to make something engaging to a purchaser
+- email from Dan Angus
+	- spore clone with evolution (it's not)
+	- an ecosystem through time (geological periods perhaps)
+	- i am going for more of a levels + creatures (open ended)
+	- i want more user interaction with process than just tweaking parameters
+- email from Shaun Ervine
+	- working on: JIRA Mate v2, toilet mate, DRINK Melbourne, EAT. Sydney, ...
+	- http://www.apptism.com/developers/shaun-ervine
+	- use google a lot, objective C is ok
+	- stay away from interface builder, do it by hand
+
+23rd March 2009
+- wrote and published blog post on videos of virtual creatures
+- wrote blog post regarding running a GA on the iphone
+
+22nd March 2009
+- I got some feedback from David
+	- best score for environment
+	- best score overall
+	- hand tweaking creatures to give better results
+	- re-generate seed creatures quickly on the fly
+	- evolve in the background and offer new creatures to the user when advancements are discovered
+- use a scoring system to track 'your best adaptation' for each environment
+	- treat it more like a game
+- use a creature editor to design skeletons and muscles and let evolution clean them up
+- working on design for creature, simulation, design
+- blog new phone and app idea
+- created project management document
+- created expenses document
+
+21st March 2009
+- link to a GA on a PSP: http://pyevolve.sourceforge.net/wordpress/?p=235
+- discussion yesterday with Nigel about getting reinforcement learning in the application
+	- more interactivity
+	- less computation
+- started technical design for environments
+	- i want a technical design for creatures, simulations, and the GUI as well
+- learning the environment and doing engine comparisons is part of implementation
+
+20th March 2009
+- read paper on distributed GA's on mobile (really bluetooth)
+	- Pervasive evolutionary algorithms on mobile devices (2009)
+		- java code base: http://ulfsark.sourceforge.net/
+	- pointer to Boincoid: distributed project on android: http://boincoid.sourceforge.net/
+- thinking about sending the requirements spec out for review
+	- need to elaborate 'view mode'
+	- need to elaborate 'fighting mode'
+- I sent out an email to mayhem, dan, dave, max, and nigel
+
+19th March 2009
+- I am thinking about contacting some people to provides some insight into iphone development and my domain
+	- Shawn from Shine - has iphone experience, good contact
+	- ga blog guy, mentioned a desire for GA on iphone
+		- i cannot contact him directly, there is no email link
+		- interesting comment using distributed GA's on cell phones
+		- https://www.blogger.com/comment.g?blogID=11573937&postID=8086777239969501578&pli=1
+		- Juan Juli‡n Merelo Guerv—s: http://blojj.blogalia.com/
+- i want to write a functional sepc for the natural selection idea
+	- i also want to write a design doc - how the thing will work
+	- i am concerned about the lack of interaction in the process - humans need better involvement in the app
+- i have been thinking about evolving little 2d creatures
+	- like vehicles for completing a map or race
+- feedback from matt
+	- the app should include creature battles across bluetooth
+- finished a draft of the requirements specification
+
+18th March 2009
+- jailbroke new iphone
+	- installed a bunch of home brew apps and pirated itunes apps
+- project
+	- i want to write a brief requirements spec to elaborate what i want the app to do
+	- thoughts along the lines of creature and/or environment sharing, battles, etc
+	- i need to select a 3d lib/engine and start learning all about it
+	- i need to evaluate the available 3d engines based on my requirements - thus i need a spec and design
+- skills
+	- i want to do as many iphone tutorials as possible
+	- i want to get up to speed on the platform
+

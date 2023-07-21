@@ -1,0 +1,152 @@
+Natural Selection iPhone Application
+Engine Selection, v1.0
+
+Introduction
+This document covers the summary and selection of an appropriate 3D engine and physics engine for the Natural Selection iPhone application.
+
+Requirements
+This section lists the requirements of an a 3D and/or physics engine.
+
+-> should i write a feature comparison matrix?
+
+- integration into the iPhone SDK
+- can run on the iPhone
+- can be deployed in the Apple AppStore
+- execute simulations in the background as well as foreground
+- programatic manipulation of 3D objects (creation, instantiation)
+- no cost
+- low polygon counts, lots of physics simulation
+	- a handful of cubes on the screen, complicated sensors and actuators for simulating the rendered objects
+
+
+Engines
+This section lists candidate engines.
+
+-> I may forum post on each engine, list my requirements, discover how easy/hard some of these things i need are
+
+SIO2 Interactive, SIO2
+URL: http://www.sio2interactive.com/HOME/HOME.html
+- free open source & indie developer licenses (50USD)
+- built in 3D and physics engine (Bullet physics): http://www.bulletphysics.com/Bullet/wordpress/
+- 3D is built around Blender
+- lots of tutorials (16), some video
+- lots of released titles (15)
+- lots of recent development (last version late March)
+- open source: LGPL
+- free version forces a splash screen for the engine (maybe)
+--
+downsides
+- i know nothing about blender (relied upon for 3D models and scenes): http://www.blender.org/
+	
+
+oolong engine
+URL: http://code.google.com/p/oolongengine/
+	- Home: http://www.oolongengine.com/
+	- blog of developer (rockstar's lead graphics programmer): http://diaryofagraphicsprogrammer.blogspot.com/ 
+	- mailing list: http://lists.oolongengine.com/listinfo.cgi/oolong-oolongengine.com
+- written in C++ with objective-c extensions
+- useful for creating new games and porting existing games to the iphone
+- Bullet SDK for 3D physics: http://www.bulletphysics.com/Bullet/wordpress/
+- fluid studios for memory management: http://www.fluidstudios.com/
+- used in at least 4 titles
+- open source: MIT license 
+--
+downsides
+- not much documentation, mailing list is pretty bare as well
+
+iTorque Game Builder
+- iPhone version of Garage Games - Torque Game Builder: http://www.garagegames.com/products/torque-2D/
+- URL: http://www.garagegames.com/products/torque-2d/iphone
+- uses elements of the oolong engine apparently
+- $500USD
+- WYSIWYG 2D editor at iPhone screen resolution
+- for building 2D games
+- 3D is coming: http://www.garagegames.com/products/torque-3d
+- lots of documentation, lots of users
+
+Unity 3D Engine
+- Unity Technologies, Unity: http://unity3d.com/
+- > 100 titles using the engine
+- iphone: http://unity3d.com/unity/features/iphone-publishing
+- list of games across a range of platforms: http://unity3d.com/gallery/game-list/
+- 2d/3D engine
+- Cost of Unity (Indie $199.00) + iPhone features (Basic: $399 per seat)
+- maybe lots of people are using it: http://www.developmag.com/news/30932/200-companies-license-Unity-for-iPhone
+
+
+Shiva's - Ston3D Engine
+- URL: http://www.stonetrip.com/shiva/publish-3d-game-on-iphone.html
+	- forum: http://developer.stonetrip.com/index.php?option=com_fireboard&Itemid=2
+- a bunch of games released on the platform
+- free add on for Shiva to allow iphone publishing
+- 3d authoring application for Windows with a game engine 
+	- does it run on mac?
+- offer training
+- 169.00GBP (350AUD or 244USD)
+
+
+CubicVR
+- URL: http://www.cubicvr.org/
+	- sourceforge page: http://sourceforge.net/projects/cubicvr/
+- open source
+- no stable builds, only SVN repository
+- uses Bullet physics
+- support other platforms
+
+
+physics engines
+- Box2D http://www.box2d.org/
+	- used for rolando: http://www.box2d.org/forum/viewtopic.php?f=6&t=1051
+
+
+
+Alternatives
+- write my own 3D and use an open source physic engine
+- use an existing port of a 3D game as the basis
+	- quake or quake III arena
+
+
+Maybe's
+- Irrlicht Engine: http://irrlicht.sourceforge.net
+	- based on: http://irrlicht.sourceforge.net/phpBB2/viewtopic.php?t=30134&highlight=iphone
+	- not in a solid state: http://irrlicht.sourceforge.net/phpBB2/viewtopic.php?p=181454&sid=1c6a55573e37e70dc6b497c6390fe695
+	- a game was written using it: http://irrlicht.sourceforge.net/phpBB2/viewtopic.php?t=30134
+	- maybe not an ideal render anyway
+- cocos2d-iphone: http://code.google.com/p/cocos2d-iphone/
+	- 2D engine with Chipmunk physics: http://code.google.com/p/chipmunk-physics/
+- UtopiaGL
+	- story of its development http://www.kevindoolan.net/blog/post/2009/01/24/iPhone-3D-Engine-Development.aspx
+- Icarus Studios: http://www.icarusstudios.com/
+	- mentioned on venture beat: http://venturebeat.com/2008/09/16/iphone-gets-3d-engine-middleware/
+	- no product yet
+- Living Arcana (2007, might be vapor)
+	- http://livingarcana.com/projects
+- Yeti3D
+	- description http://www.marcogiorgini.com/articoli.asp?art=112
+	- port of an engine used for gameboy advance
+	- used to create iPac3D: http://www.marcogiorgini.com/articoli.asp?art=114
+	- no openGL - all software rendering
+	- seems to be for jailbroken phones
+
+
+Allegro [not on iphone]
+- URL: http://www.allegro.cc/
+- A game programming library
+	- lib: http://alleg.sourceforge.net/
+
+OGRE 3D Engine [Not for iphone]
+- http://www.ogre3d.org/
+
+Other round ups: 
+- 3D Engines on iPhone / iPod: http://digitalbreed.com/2008/3d-engines-on-iphone-ipod
+	- followup review of SIO2: http://digitalbreed.com/2008/iphone-3d-engine-test-sio2
+- apple forum post, along the same lines: http://discussions.apple.com/message.jspa?messageID=9168874
+
+
+General References
+- OpenGL ES Tutorials: http://www.zeuscmd.com/tutorials/opengles/index.php
+- Game Programming forum: http://www.gamedev.net/community/forums/
+- Apple developer forums: http://discussions.apple.com/category.jspa?categoryID=164
+- iDevGames Forum: http://www.idevgames.com/forum/forumdisplay.php?f=66
+- Nehe OpenGL Tutorials: http://nehe.gamedev.net/
+

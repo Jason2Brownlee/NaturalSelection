@@ -1,0 +1,28 @@
+Technical Prototype #1
+
+Introduction
+The goal of this technical prototype is to mitigate some technical risk in the technology selected for the natural selection iPhone Application.
+
+Objective
+A summary of the features to be realized in the technical prototype.
+- Prepare the xcode project
+	- New Natural Selection Project
+	- Oolong as a static library (built on demand, xcode project cross-reference)
+	- Evolution (C++ library interface) as a static library (built on demand, xcode project cross-reference)
+- Simulation
+	- Physics (gravity and collision detection)
+	- Render one or a number of cubes
+	- Environment (plane and skybox)
+
+Progress
+A summary of the progress, lessons learned, and roadblocks towards each objective for the prototype.
+
+Static Library Support
+	- Tutorial: Code Sharing Via Static Libraries And Cross-Project References - http://www.mobileorchard.com/code-sharing-via-static-libraries-and-cross-project-references/
+	- Building static libraries with the iPhone SDK: http://www.stormyprods.com/blogger/2008/11/using-static-libraries-with-iphone-sdk.html
+	- I am not convinced that externalizing the code as static projects is desirable. External projects is for code reuse, and I do not plan to re-use my code base for other projects. I was thinking about functional partitioning and potential compatibility with future updates to oolong.
+	
+	
+
+Conclusions
+A summary of the suggested next technical prototype.

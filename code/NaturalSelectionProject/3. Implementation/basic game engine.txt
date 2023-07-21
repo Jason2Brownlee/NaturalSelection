@@ -1,0 +1,15 @@
+Basic Game Engine
+
+openGL
+- http://nehe.gamedev.net/
+	- zillions of tutorials
+- OpenGL ES 1.1 Reference Pages http://www.khronos.org/opengles/sdk/1.1/docs/man/
+	- lookup the meaning of functions
+
+
+iPhone Game Programming - Tutorial 1: http://www.71squared.co.uk/2009/03/iphone-game-programming-tutorial-1/
+	- for the game loop and separation of rendering and simulation
+	- comments on good project layout (nothing in init, delegates for project specific rendering)
+iPhone Game Programming - Tutorial 3 - SpriteSheet Class: http://www.71squared.co.uk/videos/Tutorial3.mov
+	- a better way at handling the game loop
+	

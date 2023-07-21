@@ -1,0 +1,180 @@
+Getting upto speed on Oolong
+
+my setup
+- iBook G4 (Leopard 10.5.6, PPC 1.33GHz, 512 MB RAM)
+- Xcode 3.1.2 (iPhone 2.0 to 2.2)
+- hacks to get the SDK to install and compile for PPC
+
+official
+started September 2007
+
+- Oolong Engine: http://www.oolongengine.com/
+	- news feed, lots of activity start and early 2008
+- Oolong mailing list: http://lists.oolongengine.com/listinfo.cgi/oolong-oolongengine.com
+- oolongengine google code: http://code.google.com/p/oolongengine/
+- author's blog: http://diaryofagraphicsprogrammer.blogspot.com/
+
+related (?)
+- VFPmathLibrary:http://code.google.com/p/vfpmathlibrary/
+	- author is involved
+
+by the author
+- Oolong Engine (December 2007): http://diaryofagraphicsprogrammer.blogspot.com/2007/12/oolong-engine.html
+	- renamed to Oolong, named after author's favorite tea
+- iPhone development - Oolong Engine (July 2008): http://diaryofagraphicsprogrammer.blogspot.com/2008/07/iphone-development-oolong-engine.html
+	- started as a fun show off project, now a serious engine used in a number of production titles
+- Ported my iPhone Engine to OS 2.0 (April 2008): http://diaryofagraphicsprogrammer.blogspot.com/2008/04/ported-my-iphone-engine-to-os-20.html
+		- oolong on 2.0
+- Major Oolong Update (December 2008): http://diaryofagraphicsprogrammer.blogspot.com/2008/12/major-oolong-update.html
+	- new math library
+	- latest POWERVR POD format (?)
+	- VBO support in each example (?)
+	- talk of zip support, 3d map support
+- San Angeles Observation on the iPhone (January 2008): http://diaryofagraphicsprogrammer.blogspot.com/2008/01/san-angeles-observation-on-iphone.html
+	- ported a demo to the engine
+- Porting an Open-Source Engine to the iPhone? (December 2007) http://diaryofagraphicsprogrammer.blogspot.com/2007/12/porting-open-source-engine-to-iphone.html
+	- decide to write his own rather than port over existing
+- iPhone Graphics Programming (December 2007): http://diaryofagraphicsprogrammer.blogspot.com/2007/12/iphone-graphics-programming.html
+	- started looking at iphone
+
+other
+- iPhone ARM VFP code: http://diaryofagraphicsprogrammer.blogspot.com/2008/11/iphone-arm-vfp-code.html
+
+programming tips: all source code is in oolong
+- iP* programming tip #9: http://diaryofagraphicsprogrammer.blogspot.com/2009/01/ip-programming-tip-9.html
+	- VFP assembly programming
+- iP* programming tip #8: http://diaryofagraphicsprogrammer.blogspot.com/2008/12/ip-programming-tip-8.html
+	- the touch interface
+- iP* programming tip #7: http://diaryofagraphicsprogrammer.blogspot.com/2008/12/ip-programming-tip-7.html
+	- Point Sprites
+- iP* programming tip #6: http://diaryofagraphicsprogrammer.blogspot.com/2008/12/ip-programming-tip-6.html
+	- Matrix Palettes
+- iP* programming tip #5: http://diaryofagraphicsprogrammer.blogspot.com/2008/12/ip-programming-tip-5.html
+	- on pixel shader's and references the 'Per-Pixel Lighting' example in Examples/Renderer
+- iP* programming tip #4: http://diaryofagraphicsprogrammer.blogspot.com/2008/12/ip-programming-tip-4.html
+	- the basic oolong app (getting started), bridging objective c and c++/c
+- iP* programming tip #3: http://diaryofagraphicsprogrammer.blogspot.com/2008/12/ip-programming-tip-3.html
+	- review of folders in an application (project organization)
+- iP* programming tip #2: http://diaryofagraphicsprogrammer.blogspot.com/2008/12/ip-programming-tip-2.html
+	- setting up the development environment - all in one mode!
+- iP* programming tip #1: http://diaryofagraphicsprogrammer.blogspot.com/2008/11/ip-programming-tip-1.html
+	- underlying hardware of the device
+
+mailing list
+- almost 12 months of development (since june 2008)
+
+
+
+Titles using it
+- iPhysics: http://www.iphone.r4m0n.net/
+- stereoscope simulator: http://blinkenlights.net/stereoscope
+- Zombie Mansion a first person shooter for the iPhone: http://sourceitsoftware.com/zombie.html
+- iTorque Game Builder 
+
+Possible titles using it
+
+
+facts
+
+possible facts
+- may require 3ds model's
+- used to be called iGDK (iPhone Game Development Kit): http://www.iphoneworld.ca/news/2008/01/05/oolong-formerly-igdk-iphone-games-development-engine-now-closed-source/
+- old iGDK link: http://code.google.com/p/igdk/
+	- review: http://www.iphoneblog.de/2007/12/21/igdk/
+- How does Oolong compare to SIO2? (december 2008) http://sio2interactive.forumotion.net/about-the-sdk-f1/how-does-oolong-compare-to-sio2-t230.htm
+	- comparison
+	
+	
+
+
+OpenGL and Mobile Devices: Round 2 - OpenGL ES for the iPhone and iPod Touch: http://www.ddj.com/mobile/209600498
+- iPhone 3D Hardware: PowerVR MBX Lite
+- do not have to use fixed point
+- lots of interesting optimization suggestions based on available hardware
+- example of how to handle OpenGL project in C++ and hook it into a standard OpenGL iphone project
+- source code for example: ftp://66.77.27.238/sourcecode/ddj/2008/0808.zip
+
+POWERVR Insider SDK 
+- uses the POD format (?)
+	- POWERVR POD file format
+	- conversion tools: http://www.imgtec.com/powerVR/insider/powervr-utilities.asp
+- there are exporters?
+- assets in the engine (textures/models) are from Imagination Technologies / POWERVR (demo purposes only)
+	- tutorials and code examples: 
+		Khronos OpenGL ES 1.x SDK for POWERVR MBX: http://www.imgtec.com/powervr/insider/sdk/KhronosOpenGLES1xMBX.asp
+
+
+Oolong Code
+- SVN checkout (April 04th, 2009)
+- Documentation - basically there is none
+- integration
+	- Bullet (2.73)
+		- http://www.bulletphysics.com/Bullet/wordpress/
+	- memory manager: http://www.FluidStudios.com/publications.html
+		- http://www.flipcode.com/askmid/archives.shtml
+	- IPROF: A Portable Industrial-Strength Interactive Profiler for C++ and C, by Sean Barrett
+		- http://silverspaceship.com/src/iprof/
+	- VFP math library for the iPhone / iPod touch
+		- http://code.google.com/p/vfpmathlibrary/
+	- enet (network subsystem used in cube)
+		- http://enet.bespin.org/
+		
+- communication is in the form of code examples (/Examples)
+	- each has a readme that is next to useless
+		- most run in the simulator contrary to what the readme indicates
+
+	- Audio/ 01 Loadwav (fails to compile)
+	- demos/San Angeles (by Jetro Lauha, http://jet.ro/) 
+		- three dimensional world, lots of clips
+	- Input/Accelerometer
+		- receive inputs from the accelerometer
+	- Networking/ENetTestServer
+		- some kind of test server (enet server)
+	- Networking/NetworkSkeleton
+		- rotating cube - enet client skeleton
+	- Physics/FallingCubes
+		- collection of falling cubes
+	- Physics/PickObject
+		- kickcubes (presumably it allows you to flick cubes around) accepts touch - does nothing in the simulator
+	- Renderer/01 Skeleton
+		- basic skeleton application - rotating cube
+	- Renderer/02 Per-PixelLighting
+		- does not appear to work - mess on a rotating cube - i presume the cube is intended to be illuminated
+	[examples from PVR site ported: http://www.imgtec.com/powervr/insider/sdk/KhronosOpenGLES1xMBX.asp]
+		- not quite
+		- suspect they need to run on the real chip - defiantly not in the simulator
+		----
+		- Renderer/Ported PowerVR Examples/01 POD Geometry 
+			- black screen
+		- Renderer/Ported PowerVR Examples/02 Optimized Mesh
+			- crashes
+		- Renderer/Ported PowerVR Examples/03 Shadows
+			- crashes
+		- Renderer/Ported PowerVR Examples/04 Morphing
+			- crashes
+		- Renderer/Ported PowerVR Examples/05 Eight Point Lights
+			- works but no effect
+		- Renderer/Ported PowerVR Examples/06 Particle System
+			- black screen
+		- Renderer/Ported PowerVR Examples/07 Skybox
+			- crash
+		- Renderer/Ported PowerVR Examples/08 Clip Planes
+			- crash
+		- Renderer/Ported PowerVR Examples/09 Transparency
+			- crash
+		- Renderer/Ported PowerVR Examples/10 MatrixPalette
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+

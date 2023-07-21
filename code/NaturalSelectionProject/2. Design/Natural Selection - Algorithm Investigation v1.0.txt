@@ -1,0 +1,101 @@
+Natural Selection iPhone Application
+Algorithm Investigation
+
+Introduction
+An investigation into the algorithms and data structures needed for the Natural Selection project.
+
+Summary
+todo
+
+
+Paper Review
+
+Evolving Virtual Creatures (1994)
+- all about optimization as a tool for automating the preparation of controllers for virtual locomotion controllers
+- trade-off between control and realistic behaviours in these controllers
+- evolve the structure of the creature as well as its control system (morphology and nervous system)
+- morphology is defined by a directed graph structure
+	- executing the graph results in a creature morphology
+- structure (one block)
+	- dimensions (define size)
+	- joint type (define valid movement between part and its parent)
+		- number of degrees of freedom
+		- movement allowed for each degree of freedom
+	- types include: rigid, revolute, twist, universal, bend-twist, twist-bend, spherical
+	- joint limits: point which beyond restoring forces are exerted on the degree of freedom (limit)
+	- recursive limit: maximum times it can be used in a recursive cycle (children?)
+	- neural network (local neurons)
+	- connections to other nodes
+		- placement of the child relative to parent
+			- position, orientation, scale, reflection (inversion? toward symmetry)
+		- must be on the surface of child part
+		- terminal only flag (some parts can only be used for terminals)
+			- chosen when construction is at its maximum depth
+- control (virtual brain)
+	- accepts sensor inputs and produces effector outputs
+	- applied as forces or torques at degrees of freedom in the body's joints
+	- variable scalars that may be +/-
+	- attempt at simplifying muscle pairs
+- sensors (operate for a block)
+	- joint angle sensors (current degree of freedom for each joint)
+	- contact sensors (boolean of whether contact is made or not)
+		- each face of the part - contact is anything
+	- photo sensors (react to light source position - normalized light source direction to the part)
+		- three sensors, vector is normalized relative to the orientation of the part
+	- additional that could be added: accelerometers, smell, sound
+		(great opportunity to get the iphone sensors involved)
+- neural net
+	- just reactive
+	- could add internal state and history
+	- using GP with a bounded function set for each controller
+		- sum, product, divide, sum-threshold, greater-than, sign-of, min, max, abs, if, interpolate, sin, cos, atan, log, expt, sigmoid, integrate, differentiate, smooth, memory, oscillate-wave, and oscillate-saw 
+	- weighted connections in a directed graph (one child for each node)
+	- not really a tree
+- also has centralized neurons that are not connected to any part
+- effectors
+	- plug into the brain for the joint
+	- have a maximum force proportional to the area (volume?) of the two connecting parts
+		- cross-sectional area
+	- strength scales with area
+	- mass scales with volume
+	- non-uniform scale of behaviour
+- control
+	- both genotype and phenotype are directed graphs
+	- can have recurrent connections for state
+	- nested graph for the entire creature
+	- a part can receive signals from itself of children parts
+	- also has neurons not associated with any part
+- NOTE: the mapping from genotype to phenotype for the control system is not clear
+	- attempt to model the example in figure 4a/4b (might help understand the adopted method)
+simulation
+	- lots of interactions
+		- articulated body dynamics
+		- numerical integration
+		- collision detection
+		- collision response
+		- friction
+		- viscous fluid 
+	- used Featherstones articulated body method on each part
+	- Runge-kutta-fehlberg method for numerical integration (4th order)
+		- 1 to 5 integration steps for each 1/30 frame
+	- bounding box hierarchies to reduce collision detection
+	- clip half of connected parts to allow some reasonable free movement
+	- physics must be very solid, otherwise creatures will exploit it
+- behaviour selection
+	- lots of viability testing
+	- discard if it looks like they will not out-compete
+- customized mutation and crossover operations
+- evolution
+	- standard evolution
+	- maybe evolve just the brain or just the morphology, and hand design the other
+	- maybe use a user-based selection strategy
+	
+
+		
+	
+
+
+
+
+
+

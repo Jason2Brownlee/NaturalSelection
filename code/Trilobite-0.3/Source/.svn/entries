@@ -1,0 +1,49 @@
+8
+
+dir
+207
+https://box2d.svn.sourceforge.net/svnroot/box2d/trunk/Source
+https://box2d.svn.sourceforge.net/svnroot/box2d
+
+
+
+2009-04-08T07:20:43.892474Z
+207
+erincatto
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+f71193c7-d439-0410-8131-bb32c6e3d2ad
+
+Dynamics
+dir
+
+Common
+dir
+
+Collision
+dir
+
+Makefile
+file
+
+
+
+
+2009-04-13T05:21:26.000000Z
+dd6fa2102d3adacf15ff7f0a49635bac
+2009-02-13T23:44:19.026602Z
+197
+udoprog
+

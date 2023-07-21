@@ -1,0 +1,27 @@
+Natural Selection iPhone Application
+Out of Scope
+
+
+Introduction
+A collection of great feature ideas that are out of scope
+
+
+Ideas
+- offer a host of creature sensor types
+	- smell, sound, etc
+	- sensors that take input from the iphone itself (microphone, accelerometer, touch)
+- internet integration
+	- live creature zoo to sample (select and play with, select and evolve further)
+	- live computation servers to do the hard work
+	- record 5 frame animations of creatures walking to improve browsing of available creatures
+- soft bodied physics
+	- not limited to rigid physics for the creatures bodies
+- a creature creator
+	- hand design brains
+	- hand design creature components (foot, leg, arm)
+	- hand design creature morphology
+- automatic body generator
+	- algorithm to put skin, face, eyes, fur, patterns, etc on a creature
+	- skin a creature - allow the user or algorithm to generate a pattern/skin for the evolved skeleton
+
+	

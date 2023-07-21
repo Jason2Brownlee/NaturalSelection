@@ -1,0 +1,119 @@
+Natural Selection iPhone Application
+Visual Introduction to Morphology Evolution, v1.0
+--------------------------------------------------
+Jason Brownlee, March 2009
+
+Introduction
+--------------------------------------------------
+This document provides a visual introduction to the morphology evolution via the use of web page references. Specifically, images and videos are presented that exemplify the inspiration for the Natural Selection project.
+
+Ideas
+--------------------------------------------------
+This section provides free-form ideas collated while watching the videos listed in this document.
+	- process co-evolves virtual creatures brains and bodies
+	- three dimensional virtual creature evolution, alife
+	- provide a collection of pre-fabricated general-purpose creatures as a base for adaptation (worm, etc)
+	- allow the user to pick up, drop, throw creatures in the environment (play mode)
+	- use cloud speed in the sky to provide impression of time passing, and time passing faster (2X, 4X, ...)
+	- enforce constraints on the process, such as bilateral symmetry and maximum number of blocks
+	- use fog to give the impression of different environments (under water, in the sky)
+	- stretch a textured skin/mesh over the polygons to give a more organic look and feel
+	- include sound effects for ground touching
+	- use an oscillator to get repetitive movements
+	
+
+Resources
+--------------------------------------------------
+This section lists video and general web resources on evolving virtual creatures.
+
+Karl Sims Website: http://www.karlsims.com
+	- Evolving Virtual Creatures: http://www.karlsims.com/papers/siggraph94.pdf
+	- Evolving 3D Morphology and Behavior by Competition: http://www.karlsims.com/papers/alife94.pdf
+	- Virtual Creatures: http://www.karlsims.com/evolved-virtual-creatures.html
+	- Video: http://www.archive.org/details/sims_evolved_virtual_creatures_1994
+
+Videos (youtube)
+	- Simulation of Evolution by Natural Selection (with narration): http://www.youtube.com/watch?v=oCXzcPNsqGA
+	- Daniel Dennett - Is Evolution an Algorithmic Process? Part 4: http://www.youtube.com/watch?v=b1rHS3R0llU
+	
+Challenges: swimming speed, walking (distance from origin, total distance traveled), jumping, light following, block possession (minimize distance to block & maximize distance of competitor from block)
+
+
+Review Article:
+	- Evolving Virtual Creatures: The Definitive Guide: http://aigamedev.com/videos/evolving-virtual-creatures
+	- Evolution of Morphology and Behaviour for Physically Modelled Creatures: http://www.tim-taylor.com/research/embody.html
+	- MathEngine Evolved Creatures: http://www.tim-taylor.com/demos/mathengine/index.html
+
+Rui P. Costa (http://b4h0pe.googlepages.com/)
+	- Life as it could be - Virtual Creatures: http://www.youtube.com/watch?v=_f-LORZ2EFU
+	- Challenges: walking, walking across bridge, distance move object, distance off pedestal,jumping
+
+
+
+Lee Graham (http://www.stellaralchemy.com/lee/)
+	- 3DVCE - three dimensional virtual creature evolution
+	- Virtual Creature Evolution Sequence: http://www.youtube.com/watch?v=oquKOVfzGfk
+	- End-over-end Worm - Evolved Virtual Creature: http://www.youtube.com/watch?v=l-qOBi2tAnI
+	- First evolved swimmer: http://www.youtube.com/watch?v=gfC3NCu4xLY
+	- Frog - Evolved Virtual Creature: http://www.youtube.com/watch?v=j2lSPg2kY-c
+	- Virtual creature evolved for flat terrain: http://www.youtube.com/watch?v=_OGq3Ru-TbA
+	- TAM6 - Evolved Virtual Creatures Video: http://www.youtube.com/watch?v=F-GnKr4rw4M
+	- Inelegant Gait - Evolved Virtual Creature: http://www.youtube.com/watch?v=z38w7B-LbII
+	- Evolved 3D Virtual Creature: http://www.youtube.com/watch?v=ejxEY0ttDQE
+	- Smallest - Evolved Virtual Creature: http://www.youtube.com/watch?v=J9jEnUMvdm0
+	- Picasso's Kangaroo: http://www.youtube.com/watch?v=AJwGXiGKwrI
+	- Jumper Done Learning to Travel: http://www.youtube.com/watch?v=K04PZAWpxkU
+	- Thin Jumper - Evolved Virtual Creature: http://www.youtube.com/watch?v=cga6VZdXvdU
+	- Presentation to the Purdue Skeptics Society, April 2008: http://www.youtube.com/view_play_list?p=7C4B2844076AB581
+		- 6 parts
+		- overview of EC, Sims work, 3DVCE distributed project
+		- 3DVCE uses 55kb per creature
+		- fixed branching as well as genetic constraints on branching (evolved)
+		- joints have 2 degrees of motion, no twisting, each motor is a GP
+		- GP take three sensor inputs (angle, touch, something), and output two (desired join position, force)
+		- cheater - satisfy fitness function, but not what you have in mind
+	- Darwin Day 2008 - Evolved virtual creature compilation video: http://www.youtube.com/watch?v=hkQ_pOehyzw
+	- HOW-TO Videos for 3D Virtual Creature Evolution: http://www.youtube.com/view_play_list?p=BE43E0586C077DB9
+		- 14 parts
+		- fitness function as a composite of a suite of interesting things that can result in jumping, walking, etc behaviours
+		- fitness function can change over time
+	- favourite creatures (videos): http://www.stellaralchemy.com/lee/vce3d_favorites.html
+	- zoo of all creatures (videos): http://www.stellaralchemy.com/lee/vce3d_the_zoo.html
+
+Nicolas Lassabe (http://www.irit.fr/~Nicolas.Lassabe/)
+	- Evolving artificial creatures: http://www.youtube.com/watch?v=d4BGLp0wcdE
+	- Challenges: walking, stair climbing, block pushing, walking across blocks, skateboarding
+
+EvoRunners (http://evorunners.blogspot.com/)
+	- EvoRunners - result of 1000 generations: http://www.youtube.com/watch?v=uS57VNvq0o4
+	- EvoRunners Creatures: http://www.youtube.com/watch?v=yZ309UntxMQ
+	- EvoRunners Orgy: http://www.youtube.com/watch?v=aAoeHAKLOBc
+	- EvoRunners - Generations: http://www.youtube.com/watch?v=GRWJBDcaFq0
+	- Challenges: walking
+
+AnimatLab (http://animatlab.lip6.fr/RoburEvolvingEn)
+	- Evolution of neuro-controllers for a flapping-wing animat: http://www.youtube.com/watch?v=BfY4jRtcE4c
+	- Challenges: flapping (flying) in the context of dynamic perturbations, different flapping straetgies
+	
+Polyworld
+	- Polyworld: Using Evolution to Design Artificial Intelligence: http://www.youtube.com/watch?v=_m97_kL4ox0
+
+ERO (http://ero.matfyz.cz/)
+	- Evolved virtual creatures (2007): http://www.youtube.com/watch?v=0_8tNGKm87U
+	- Challenges: walking, swiming, following
+	
+Evolving fighting creatures 9: http://www.youtube.com/watch?v=h-o1mL-yXGQ
+Evolving fighting creatures 8: http://www.youtube.com/watch?v=_3NzJQx90yc
+
+www.sw3d.net
+	- Springs World 3D - Virtual Reality: http://www.youtube.com/watch?v=6WCm7iOR7Ig
+	
+Evolving Virtual Catapults: http://www.youtube.com/watch?v=7j1D89YIa8Y
+	- Challenges: Hitting a block as far as possible
+
+Tyler Streeter (http://www.tylerstreeter.net/)
+	- Jumping GA Man: http://www.youtube.com/watch?v=PColfw4pSHQ
+	- Artificial Evolution of Humanoid Jumping Behavior: http://video.google.com.au/videoplay?docid=1002062030982551847
+	- Artificial Evolution of Humanoid Standing Behavior: http://video.google.com.au/videoplay?docid=-2510462304066175045
+
+GA evolved robot controller: http://www.youtube.com/watch?v=2dreGZ950No

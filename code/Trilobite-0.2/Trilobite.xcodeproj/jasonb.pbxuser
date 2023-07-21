@@ -1,0 +1,186 @@
+// !$*UTF8*$!
+{
+	1D3623240D0F684500981E51 /* TrilobiteAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {822, 543}}";
+			sepNavSelRange = "{332, 20}";
+			sepNavVisRange = "{0, 401}";
+		};
+	};
+	1D3623250D0F684500981E51 /* TrilobiteAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {822, 742}}";
+			sepNavSelRange = "{1143, 0}";
+			sepNavVisRange = "{0, 1278}";
+		};
+	};
+	1D6058900D05DD3D006BFB54 /* Trilobite */ = {
+		activeExec = 0;
+		executables = (
+			94089D370F92B06400D6F5EA /* Trilobite */,
+		);
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 94089D370F92B06400D6F5EA /* Trilobite */;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* Trilobite */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* Trilobite */,
+		);
+		codeSenseManager = 94089D4B0F92B07900D6F5EA /* Code sense */;
+		executables = (
+			94089D370F92B06400D6F5EA /* Trilobite */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					644,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					604,
+					60,
+					20,
+					48.16259765625,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 261293713;
+			PBXWorkspaceStateSaveDate = 261293713;
+		};
+		sourceControlManager = 94089D4A0F92B07900D6F5EA /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	29B97316FDCFA39411CA2CEA /* main.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {822, 543}}";
+			sepNavSelRange = "{351, 0}";
+			sepNavVisRange = "{0, 355}";
+		};
+	};
+	32CA4F630368D1EE00C91783 /* Trilobite_Prefix.pch */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {822, 543}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 179}";
+		};
+	};
+	94089D370F92B06400D6F5EA /* Trilobite */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = Trilobite;
+		savedGlobals = {
+		};
+		sourceDirectories = (
+		);
+	};
+	94089D4A0F92B07900D6F5EA /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+	};
+	94089D4B0F92B07900D6F5EA /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	9408A02B0F92B74B00D6F5EA /* MenuScene.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {822, 543}}";
+			sepNavSelRange = "{134, 0}";
+			sepNavVisRange = "{0, 311}";
+		};
+	};
+	9408A02C0F92B74B00D6F5EA /* MenuScene.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {822, 672}}";
+			sepNavSelRange = "{33, 0}";
+			sepNavVisRange = "{237, 1090}";
+		};
+	};
+	9408A0770F92B9BA00D6F5EA /* GameScene.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {822, 543}}";
+			sepNavSelRange = "{303, 0}";
+			sepNavVisRange = "{0, 304}";
+		};
+	};
+	9408A0780F92B9BA00D6F5EA /* GameScene.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {822, 728}}";
+			sepNavSelRange = "{756, 0}";
+			sepNavVisRange = "{0, 928}";
+		};
+	};
+	9408A1000F92C54000D6F5EA /* Box2dTestLayer.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {822, 543}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 412}";
+		};
+	};
+	9408A1010F92C54000D6F5EA /* Box2dTestLayer.mm */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {822, 3850}}";
+			sepNavSelRange = "{2165, 0}";
+			sepNavVisRange = "{1779, 1234}";
+		};
+	};
+	9447E3B80F930794009E68C7 /* b2DynamicTree.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {822, 4116}}";
+			sepNavSelRange = "{6793, 0}";
+			sepNavVisRange = "{5954, 927}";
+		};
+	};
+}

@@ -1,0 +1,71 @@
+How to compile and run wolf3d for the iPhone.
+
+Background:
+Slashdot - id Releases Open Source Wolfenstein 3D for the iPhone : http://games.slashdot.org/article.pl?sid=09/03/25/2134234&art_pos=5
+Hacker News - Carmack release open source Wolfenstein for iPhone : http://news.ycombinator.com/item?id=530835
+Reddit - Carmack releases open source Wolfenstein for iPhone : http://www.reddit.com/r/programming/comments/87622/carmack_releases_open_source_wolfenstein_for/
+joystiq - Carmack releases open source Wolfenstein for iPhone : [mash of developer notes and such] http://www.joystiq.com/2009/03/24/carmack-releases-open-source-wolfenstein-for-iphone/
+
+
+official 
+- apple app store link: http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=309470478&mt=8
+- source code: ftp://www.idsoftware.com/idstuff/wolf3d/wolf3d_iphone_v1.0_src.zip
+- id Software page: http://www.idsoftware.com/wolfenstein3dclassic/
+- Carmack's discussion: http://www.idsoftware.com/wolfenstein3dclassic/wolfdevelopment.htm
+
+background
+- based on Wolf3d Redux: http://wolf3dredux.sourceforge.net/
+- shareware version is available on cydia (just first mission): http://www.modmyi.com/forums/iphone-news/542821-wolfenstein-3d-5-app-store-0-cydia-exact-same-game-legal.html
+- source code for zodttd's version: http://github.com/zodttd/wolf3d/tree
+- description: http://modmyi.com/cydia/package.php?id=7242
+- another guy building it: http://www.drobnik.com/touch/index.php/2009/03/exercise-compile-wolfenstein-3d-for-iphone/
+
+
+helpful comments for getting it running:
+- hacker news: http://news.ycombinator.com/item?id=531418
+- reddit: http://www.reddit.com/r/programming/comments/87622/carmack_releases_open_source_wolfenstein_for/c08ge5t
+- how to compile: http://www.ghostradio.net/2009/03/building-wolf3d-for-iphone/
+
+iPhone development, Design notes, Programming notes [webpage]
+- really interesting insight into the development process
+- webpage is the same as "Carmack_iPhone_development.doc" that comes with the project
+
+also: readme_iWolf.txt
+- comes with game data that is not released under the GPL
+- what exactly? the shareware or the full thing?
+
+project data
+- data for all 60 maps
+- has an xcode project file
+- has a number of build targets
+	- release (60 maps?)
+	- release episode 1 (first episode of n maps)
+
+
+process
+- open the project file in xcode: wolf3d_iphone_v1.0_src/wolf3d/newCode/iPhone/wolf3d.xcodeproj
+	- double click it or
+	- start xcode and open the project file
+- build the application: 	Simulator 2.0 - Debug
+	results in error: (occurs with different versions and build targets)
+	
+	Undefined symbols:
+	  "_GLimp_Shutdown", referenced from:
+	      _R_Shutdown in opengl_main.o
+	  "_GLimp_AppActivate", referenced from:
+	      _R_AppActivate in opengl_main.o
+	ld: symbol(s) not found
+	collect2: ld returned 1 exit status
+
+- comment out some offending lines
+	- 366 and 405 in opengl_main.c
+	- maybe 372
+
+- build
+	- failing with: Program received signal:  “EXC_BAD_ACCESS”.
+	- on release builds
+	
+
+
+
+
